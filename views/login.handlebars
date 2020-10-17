@@ -1,0 +1,18 @@
+<h1 class ="text-center mb-3"> {{title}}</h1>
+{{#if messages.error}}
+    {{ messages.error}}
+
+{{/if}}
+<form action="/login" method="post" class="mb-4">
+    <div class="form-group"> 
+        <label for="name"> Username</label>
+        <input type="text" name="username" class="form-control">
+    </div>
+    <div class="form-group"> 
+        <label for=""> Password</label>
+        <input type="Password" name="password" class="form-control">
+    </div>
+    <input type="submit" value="Login" class="btn btn-primary btn-block">
+    <br>
+<a href="/register" class="btn btn-secondary">  New user </a>
+</form>
